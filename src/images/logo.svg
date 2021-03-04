@@ -1,6 +1,6 @@
 <svg xmlns="http://www.w3.org/2000/svg" width="175" height="54" viewBox="0 0 2604 738">
   <defs>
-    <style>.cls-1 {font-size: 95px;text-anchor: middle;font-family:Shelby, cursive;} .cls-2 {fill: #ffb1b1;}</style>
+    <style>.cls-1 {font-size: 95px;text-anchor: middle;font-family:Shelby, cursive;} .cls-2 {fill: #E91E63;}</style>
   </defs>
   <text
     id="Logo_Img"
@@ -10,8 +10,8 @@
     aria-labeledby="#img-title"
     aria-describedby="#img-desc"
   >
-    <tspan x="0" y="0">Default <tspan class="cls-2">Logo</tspan></tspan>
+    <tspan x="0" y="0">Super Skin <tspan class="cls-2">Spa</tspan></tspan>
   </text>
-  <title id="img-title">Gatsby SEO Business</title>
-  <desc id="img-desc">Graphic text that says, "Default Logo"</desc>
+  <title id="img-title">Super Skin Spa</title>
+  <desc id="img-desc">Graphic text that says, "Super Skin Spa"</desc>
 </svg>

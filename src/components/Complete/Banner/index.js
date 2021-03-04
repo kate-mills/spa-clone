@@ -5,7 +5,7 @@ const Banner = ({className,  title, subtitle, children }) => {
   return (
     <BannerWrapper>
       <h1>{title}</h1>
-      <p>{subtitle}</p>
+      { subtitle && (<p>{subtitle }</p>)}
       {children}
     </BannerWrapper>
   )

@@ -4,8 +4,8 @@
   --white: #ffffff;
   --grey: gainsboro;
   --darkGrey: #a9a9a9ff;
-  --primaryColor: #7dc272;
-  --primaryDark: #68a15f; /* used in Title component */
+  --primaryColor: hotpink;
+  --primaryDark: #D81B60; /* used in Title component */
 
   /* colors end */
   --mainFF: 'Montserrat', sans-serif; /* font-family */

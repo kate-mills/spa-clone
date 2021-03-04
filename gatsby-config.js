@@ -2,10 +2,10 @@ require('dotenv').config({
   path: `.env.${process.env.NODE_ENV}`,
 })
 
-const siteUrl = `https://skincarebyhilary.app` // change to .com url
-const netlifyUrl = `https://skincare-by-hilary.netlify.app`
-const companyName = `Skincare By Hilary`
-const description = `${companyName} - Schedule Now! Hilary's treatments include makeup, eyelash extensions, waxing, tinting, & facial spa treatments in Napa, CA.`
+const siteUrl = `https://superskinspa.com` // change to .com url
+const netlifyUrl = `https://superskinspa.netlify.app`
+const companyName = `Super Skin Spa`
+const description = `${companyName} - Schedule Now! Our treatments include makeup, eyelash extensions, waxing, tinting, & facial rejuvenation spa treatments in Napa, CA.`
 
 module.exports = {
   siteMetadata: {
@@ -27,10 +27,10 @@ module.exports = {
         country: `USA`,
       },
       description: `${description}`,
-      email: `mailto:skincarebyhilary@gmail.com`,
+      email: `mailto:esty@superskinspa@com`,
       displayEmail: {
-        prefix: `skincarebyhilary`,
-        suffix: `@gmail`,
+        prefix: `esty`,
+        suffix: `@superskinspa`,
         ext: `.com`,
       },
       geo: {
