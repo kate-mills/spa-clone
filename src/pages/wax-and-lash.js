@@ -11,11 +11,11 @@ const HairRemoval = (props) => {
   const {data:{lash}} = props
   return(
   <Layout>
-    <SEO title="Waxing & Lash Extensions with Hilary in Napa, CA | Skincare By Hilary" image={props.data.seoImg.childImageSharp.fluid.src}
-      description="Learn about waxing & lash extension procedures performed by Hilary Molloy. Hilary serves Napa, CA and surrounding areas."/>
+    <SEO title={`Waxing & Lash Extensions in Napa, CA | ${props.data.site.siteMetadata.title} `} image={props.data.seoImg.childImageSharp.fluid.src}
+      description="Learn about our waxing & lash extension procedures performed by clinical Estheticians. We serve Napa, CA and surrounding areas."/>
     <PageWrapper>
 
-      <Banner title="Waxing & Lashes with Hilary"><FluidImage fluid={props.data.seoImg.childImageSharp.fluid} maxWidth="1000px"/></Banner>
+      <Banner title="Waxing & Lash Extensions"><FluidImage fluid={props.data.seoImg.childImageSharp.fluid} maxWidth="1000px"/></Banner>
       
       <p className="click-to-schedule">Click on any wax & lash service below to get an appointment now.</p>
 
@@ -77,12 +77,17 @@ export const query = graphql`
         }
       }
     }
-    seoImg:file(relativePath: { eq: "skincare-by-hilary-app-lashes.jpg" }) {
+    seoImg:file(relativePath: { eq: "super-skin/super-skin-spa-lashes.jpg" }) {
       childImageSharp {
         fluid {
           src
           ...GatsbyImageSharpFluid
         }
+      }
+    }
+    site{
+      siteMetadata{
+        title
       }
     }
   }
