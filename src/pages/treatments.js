@@ -7,7 +7,7 @@ import { SEO, FluidImage, Btn } from "../components/Complete"
 const Treatments = (props) => {
   return(
   <Layout>
-    <SEO title="Hilary's Clinical Approach To Skincare | Skincare By Hilary" image={props.data.file.childImageSharp.fluid.src}/>
+    <SEO title={`A Clinical Approach To Skincare | ${props.data.site.siteMetadata.title}`} image={props.data.file.childImageSharp.fluid.src}/>
     <PageWrapper>
       <div className="flex-container">
         <div className="flex-item first">
@@ -21,10 +21,9 @@ const Treatments = (props) => {
         </div>
         <div className="flex-item">
           <h2>A Clinical Approach<span className="underline"/></h2>
-          <p>Hilary offers a clinical approach to working magic on your skin.</p>
-          <p>Her experience as an esthetician spans well over a decade.</p>
-          <p>Having worked in both plastic surgery and dermatology she is able to offer you a thorough skin analysis, as well as a broad range of treatment options, perfectly suited to your needs. </p>
-          <p>This, combined with her nurturing and intuitive touch, allows her to provide facial treatments that will bring new life to your skin!</p>
+          <p>All of our estheticians have worked with Dermatologists & Plastic Surgeons for well over a decade, giving them a clinical approach to skincare.</p>
+          <p>With this background and continued education, our Estheticians will offer you a thorough skin analysis, as well as a broad range of treatment options perfectly suited to your needs.</p>
+          <p>We will bring new life to your skin with our nurturing and intuitive touch.</p>
          <Btn className="container-btn" to="/schedule" text="Schedule an appointment" backgroundColor="var(--grey)" color="var(--black)" hoverColor="var(--primaryColor)" hoverBackground="var(--primaryDark)" />
         </div>
       </div>
@@ -122,6 +121,11 @@ export const query = graphql`
           src
           ...GatsbyImageSharpFluid
         }
+      }
+    }
+    site{
+      siteMetadata{
+        title
       }
     }
   }

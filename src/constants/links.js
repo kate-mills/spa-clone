@@ -38,14 +38,14 @@ const socialLinks = [
     id: 1,
     label: "Go to our Facebook Page",
     name: 'facebook',
-    url: "https://www.facebook.com/pages/Hilary-Molloy-skin-artistry-renewal/286199431401479",
+    url: "https://www.facebook.com/pages/",
   },
   {
     icon: <GrInstagram />,
     id: 2,
     label: "Go to our Instagram Page",
     name: 'instagram',
-    url: "https://instagram.com/itshilarymolloy",
+    url: "https://instagram.com/",
   },
 ]
 

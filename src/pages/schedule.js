@@ -2,7 +2,7 @@ import React from "react"
 import { graphql } from "gatsby"
 
 import Layout from "../components/layout"
-import { SEO, ContactForm, PhoneNumber } from "../components/Complete"
+import { SEO, ContactForm, PhoneNumber, FluidImage } from "../components/Complete"
 
 import styled from 'styled-components'
 
@@ -11,14 +11,14 @@ const Contact = (props) => {
   return (
     <Layout title="Schedule An Appointment" bannerChildren={child}>
       <SEO
-        title={`Schedule A Facial Rejuvenation Treatment With Hilary | ${props.data.site.siteMetadata.title}`}
+        title={`Schedule A Facial Rejuvenation Treatment | ${props.data.site.siteMetadata.title}`}
         description="Schedule a facial rejuvenation treatment or spa treatment with a Licensed Esthetician in Napa, CA now."
         image={props.data.seoImg.childImageSharp.fluid.src}
       />
       <PageWrapper>
         <div className="flexible">
+          <FluidImage maxWidth="300px" fluid={props.data.seoImg.childImageSharp.fluid}/>
           <ContactForm treatment={props?.location?.state}/>
-          <iframe title="google-map" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d7736.7423901606335!2d-122.29071790416789!3d38.297500702478345!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x8084ffe7f8f2deef%3A0xd6629f3a3384c725!2sNapa%2C%20CA!5e0!3m2!1sen!2sus!4v1614895923565!5m2!1sen!2sus" width="600" height="450" style={{border: `0`}} allowFullScreen="" loading="lazy"></iframe>
         </div>
       </PageWrapper>
     </Layout>
@@ -31,19 +31,21 @@ const PageWrapper = styled.section`
     margin: 0 auto;
     .flexible{
       display: flex;
-      flex-wrap:wrap;
+      flex-wrap:wrap-reverse;
       align-items: flex-start;
       justify-content: center;
+      .fluid-img { width: 50%;}
     }
   }
 `
 
 export const query = graphql`
   {
-    seoImg: file(relativePath: { eq: "skincare-by-hilary-app-appointment.jpg" }) {
+    seoImg: file(relativePath: { eq: "super-skin/super-skin-schedule.jpg" }) {
       childImageSharp {
         fluid {
           src
+          ...GatsbyImageSharpFluid
         }
       }
     }
