@@ -6,6 +6,7 @@
   --darkGrey: #a9a9a9ff;
   --primaryColor: hotpink;
   --primaryDark: #D81B60; /* used in Title component */
+  --descBg: #cccccc28;
 
   /* colors end */
   --mainFF: 'Montserrat', sans-serif; /* font-family */

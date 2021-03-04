@@ -63,7 +63,7 @@ const ServiceItemsWrapper = styled.div`
   &.mini { height: fit-content;}
   &.mini .menu-item{
     box-sizing: border-box;
-    background: #cccccc38;
+    background: var(--descBg);
     display: grid
     grid-template-columns: 1.5fr, 0.5fr;
     max-width: 250px;
@@ -78,7 +78,7 @@ const ServiceItemsWrapper = styled.div`
     align-items: center;
     .name{}
     .time{
-      color: forestgreen;
+      color: var(--primaryColor);
       font-size: 0.75rem;
       font-style: italic;
       font-weight:300;
@@ -94,7 +94,7 @@ const ServiceItemsWrapper = styled.div`
     }
   }
   & .desc{
-    background: #cccccc38;
+    background: var(--descBg);
     font-size: 0.8rem;
     margin: 0 auto 1.5rem;
     padding: 0 0.5rem;
