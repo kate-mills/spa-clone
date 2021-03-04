@@ -5,7 +5,7 @@ require('dotenv').config({
 const siteUrl = `https://superskinspa.com` // change to .com url
 const netlifyUrl = `https://superskinspa.netlify.app`
 const companyName = `Super Skin Spa`
-const description = `${companyName} - Schedule Now! Our treatments include makeup, eyelash extensions, waxing, tinting, & facial rejuvenation spa treatments in Napa, CA.`
+const description = `${companyName} - Schedule Now! Our treatments include makeup, eyelash extensions, waxing, tinting, & facial rejuvenation spa treatments. We serve Napa, CA and surrounding areas.`
 
 module.exports = {
   siteMetadata: {

@@ -61,7 +61,7 @@ const SubmenuWrapper = styled.aside`
     text-align: center;
   }
   & .sublink:hover{
-    color: #5c5c00;
+    color: var(--primaryColor);
   }
 `
 export default Submenu

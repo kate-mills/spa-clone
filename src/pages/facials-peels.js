@@ -9,7 +9,7 @@ const FacialsPeels = (props) => {
   return(
     <Layout title="Facials & Peels"> 
     <SEO title={`Facials & Peels with clinical Estheticians in Napa, CA | ${props.data.site.siteMetadata.title}`} image={props.data.seoImg.childImageSharp.fluid.src}
-      description="Learn about skin rejuvenation procedures performed by Hilary Molloy. Hilary serves Napa, CA and surrounding areas."
+      description="Learn about our skin rejuvenation procedures. We serve Napa, CA and the surrounding areas."
     />
     <PageWrapper>
         <FluidImage fluid={props.data.seoImg.childImageSharp.fluid} maxWidth="1000px"/>
