@@ -8,7 +8,7 @@ const Footer = ()=>{
     <div>
       <hr/>
     <FooterWrapper>
-      <p className="follow-us-on">Follow Hilary on</p>
+      <p className="follow-us-on">Follow Us on</p>
       <div className="social-icons">
         {
           socialLinks.map(({icon, id, label, name, url}) => {

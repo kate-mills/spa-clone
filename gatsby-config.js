@@ -39,8 +39,8 @@ module.exports = {
       },
       logo: `${siteUrl}/images/logo.png`, // ./static/images/
       name: `${companyName}`,
-      phone: `+1-707-315-3329`,
-      displayPhone: `(707) 315-3329`,
+      phone: `+1-707-255-8471`,
+      displayPhone: `(707) 255-8471`,
       priceRange: `$$$`,
       otherUrls: [
         `https://www.facebook.com/pages/Hilary-Molloy-skin-artistry-renewal/286199431401479`,
@@ -64,8 +64,8 @@ module.exports = {
     {
       resolve: `gatsby-plugin-manifest`,
       options: {
-        name: `Skincare By Hilary`,
-        short_name: `Hilary Molloy`,
+        name:  `${companyName}`,
+        short_name: `Super Skin`,
         start_url: `/`,
         description: `${description}`,
         background_color: `#ffb1b1`,
