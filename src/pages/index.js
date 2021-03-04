@@ -2,13 +2,13 @@ import React from "react"
 import {graphql, Link} from 'gatsby'
 import styled from 'styled-components'
 import Layout from "../components/layout"
-import { SEO, FluidImage, Btn, Banner } from "../components/Complete"
+import { SEO, FluidImage, Btn } from "../components/Complete"
 
 const Home = (props) => {
   const child = <p className="p-title">Master Estheticians bring you the most in-demand & sought-after skincare.</p>
   return(
     <Layout title="Super Skin Spa" bannerChildren={child}>
-    <SEO title="Super Skin Spa" />
+    <SEO title={`${props.data.site.siteMetadata.title}`}/>
     <PageWrapper>
       <div className="flex-container">
         <div className="flex-item first">
@@ -21,7 +21,7 @@ const Home = (props) => {
           </ul>
         </div>
         <div className="flex-item">
-          <h2>About Us<span className="underline"/></h2>
+          <h2>Intuitive Touch<span className="underline"/></h2>
           <p>All of our estheticians have worked with Dermatologists & Plastic Surgeons for well over a decade, giving them a clinical approach to skincare.</p>
           <p>With this background and continued education, our Estheticians will offer you a thorough skin analysis, as well as a broad range of treatment options perfectly suited to your needs.</p>
           <p>We will bring new life to your skin with our nurturing and intuitive touch.</p>
@@ -122,6 +122,11 @@ export const query = graphql`
           src
           ...GatsbyImageSharpFluid
         }
+      }
+    }
+    site {
+      siteMetadata {
+        title
       }
     }
   }

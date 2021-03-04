@@ -3,18 +3,16 @@ import {graphql} from "gatsby"
 import styled from 'styled-components'
 
 import Layout from "../components/layout"
-import { SEO, Btn, FluidImage, ServiceItems, Banner } from "../components/Complete"
+import { SEO, Btn, FluidImage, ServiceItems } from "../components/Complete"
 
 const FacialsPeels = (props) => {
   return(
-  <Layout>
-    <SEO title="Facials, Peels, & Accoutrements with Hilary in Napa, CA | Skincare By Hilary" image={props.data.seoImg.childImageSharp.fluid.src}
+    <Layout title="Facials & Peels"> 
+    <SEO title={`Facials & Peels with clinical Estheticians in Napa, CA | ${props.data.site.siteMetadata.title}`} image={props.data.seoImg.childImageSharp.fluid.src}
       description="Learn about skin rejuvenation procedures performed by Hilary Molloy. Hilary serves Napa, CA and surrounding areas."
     />
     <PageWrapper>
-      <Banner title="Facials & Peels with Hilary" >
         <FluidImage fluid={props.data.seoImg.childImageSharp.fluid} maxWidth="1000px"/>
-      </Banner>
       <p className="click-to-schedule">Click on a facial service below to get an appointment now.</p>
 
       <section className="menu-box">
@@ -61,7 +59,7 @@ export const query = graphql`
       }
     }
 
-    seoImg:file(relativePath: { eq: "skincare-by-hilary-app-facials.jpg" }) {
+    seoImg:file(relativePath: { eq: "super-skin/super-skin-spa-facial.jpg" }) {
       childImageSharp {
         fluid {
           src
@@ -69,8 +67,15 @@ export const query = graphql`
         }
       }
     }
+
+    site {
+      siteMetadata {
+        title
+      }
+    }
   }
 `
+
 const PageWrapper = styled.section`
   .menu-box{
     display: flex;
