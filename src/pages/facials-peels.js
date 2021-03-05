@@ -17,8 +17,7 @@ const FacialsPeels = (props) => {
 
       <section className="menu-box">
         <ServiceItems items={props.data.fp} category="Facials & Peels" />
-        <ServiceItems items={props.data.extras} category="Extras" mini
-        className="extras"/>
+        <ServiceItems items={props.data.extras} category="Extras" />
       </section>
       <p className="click-to-schedule">Click on a facial service above to get an appointment now.</p>
       <Btn className="btn" to="/schedule" text="Schedule an appointment" backgroundColor="var(--grey)" color="var(--black)"/>
@@ -81,6 +80,9 @@ const PageWrapper = styled.section`
     display: flex;
     flex-wrap: wrap;
     justify-content: space-between;
+    > :nth-child(2){
+      max-width: 80%;
+    }
   }
   .head-span{
     color: white;
@@ -101,6 +103,16 @@ const PageWrapper = styled.section`
     margin-top: 1rem;
     text-align: center;
   }
-  @media(min-width:768px){ .menu-box{ >:nth-child(1){ max-width: 60%; } } }
+  @media(min-width:768px){
+    .menu-box {
+      flex-wrap: nowrap;
+      >:nth-child(1){
+          max-width: 50%;
+      }
+      > :nth-child(2){
+        max-width: 35%;
+      }
+    }
+  }
 `
 export default FacialsPeels
