@@ -32,7 +32,7 @@ const PageWrapper = styled.section`
     .flexible{
       display: flex;
       flex-wrap:wrap-reverse;
-      align-items: flex-start;
+      align-items: flex-end;
       justify-content: center;
       .fluid-img { width: 50%;}
     }
