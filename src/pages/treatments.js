@@ -115,7 +115,7 @@ export const query = graphql`
         }
       }
     }
-    file(relativePath: { eq: "flower-pot.jpeg" }) {
+    file(relativePath: { eq: "super-skin/flower-pot.jpeg" }) {
       childImageSharp {
         fluid {
           src
