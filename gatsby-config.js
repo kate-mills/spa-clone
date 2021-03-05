@@ -27,9 +27,9 @@ module.exports = {
         country: `USA`,
       },
       description: `${description}`,
-      email: `mailto:esti@superskinspa@com`,
+      email: `mailto:esty@superskinspa@com`,
       displayEmail: {
-        prefix: `esti`,
+        prefix: `esty`,
         suffix: `@superskinspa`,
         ext: `.com`,
       },
