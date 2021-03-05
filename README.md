@@ -16,7 +16,7 @@ Gatsby SEO Business Starter - This is for businesses (with postal address). Just
 1.  **New local repo**
 
     ```shell
-    gatsby new new-site https://github.com/kate-mills/gatsby-seo-business-starter
+    gatsby new new-site git@github.com:kate-mills/spa-clone.git
     ```
 
     ```shell
