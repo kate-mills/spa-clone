@@ -45,7 +45,7 @@ const Submenu = () => {
 
 const SubmenuWrapper = styled.aside`
   & {
-    background: var(--grey);
+    background: pink;
     position: absolute;
     transform: translateX(-50%) translateY(3%);
     z-index: 1;
@@ -61,7 +61,7 @@ const SubmenuWrapper = styled.aside`
     text-align: center;
   }
   & .sublink:hover{
-    color: var(--primaryColor);
+    color: var(--white);
   }
 `
 export default Submenu
